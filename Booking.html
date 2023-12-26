@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Styling the body */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* Styling section, giving background
+            image and dimensions */
+        section {
+            width: 100%;
+            height: 100vh;
+            background:url("https://www.instagram.com/santhosh_tendulkar_/");
+                
+            background-size: cover;
+            background-color: skyblue;
+        }
+        /* Styling the left floating section */
+        section .leftBox {
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+            border: #e91e63;
+        }
+        /* Styling the background of 
+            left floating section */
+        section .leftBox .content {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            transition: .5s;
+        }
+        /* Styling the hover effect  
+            of left floating section */
+        section .leftBox .content:hover {
+            background: #e91e63;
+        }
+        /* Styling the header of left 
+            floating section */
+        section .leftBox .content h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        /* Styling the paragraph of 
+            left floating section */
+        section .leftBox .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        /* Styling the three events section */
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            float: right;
+            box-sizing: border-box;
+        }
+        /* Styling the links of 
+        the events section */
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+        /* Styling the hover effect
+            of events section */
+        section .events ul li:hover .time {
+            background: #e91e63;
+        }
+        /* Styling the header of time 
+            class of events section */
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+        }
+        /* Styling the texts of time 
+        class of events section */
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+ 
+        /* Styling the details 
+        class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        /* Styling the header of the 
+        details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+        /* Styling the lists of details 
+        class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        /* Styling the links of details
+        class of events section */
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+        /* Styling the details class's hover effect */
+        section .events ul li .details a:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="leftBox">
+            <div class="content">
+                <h1>
+                    Hotel Booking
+                </h1>
+                <p>
+                    Archer brings laid-back luxury to Redmond, Seattle's high-tech Eastside suburb. Set in the open-air Redmond Town Center — a walkable urban village with shops and restaurants — and close to Marymoor Park, Microsoft and Woodinville wine country, this seven-story boutique hotel delivers a sophisticated Northwest vibe and quirky, thoughtful luxuries.
+
+                    Guests can expect 160 luxe guest rooms and suites, the welcoming AKB hotel bar and outdoor patio, signature amenities and sincere service — always.
+                </p>
+            </div>
+        </div>
+        <div class="events">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            15 <br><span>March</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            Hotel Availability
+                        </h3>
+                        <p>
+                            Pod Times Square 4 stars Hotel in Manhattan, New York Located 400 metres from Restaurant Row in New York, Pod Times Square features a restaurant, bar and free WiFi throughout the property. Rooms are equipped with a flat-screen TV. 8.1 Very good 19,267 reviews Price from ₹ 6,660 per night Check availability
+                        </p>
+                        <a href="https://www.booking.com/city/us/new-york.en-gb.html?aid=339462&label=msn-wpglBCzPVADy_XibwROSLQ-80195737348580%3Atikwd-80195893111828%3Aloc-90%3Aneo%3Amte%3Alp143967%3Adec%3Aqshotel%20booking%20availability&sid=e0710ee14b7c809bdd6a4280584b2035">View Details</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            27 <br><span>May</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                             Best Hotels
+                        </h3>
+                        <p>
+                           Suite Accommodations Close to Washington DC With their proximity to Washington, DC, an onsite Business Center, and superior amenities that serve the needs of business travelers as well as those on vacation.
+                        </p>
+                        <a href="https://www.resortsandlodges.com/lodging/usa/virginia/northern-virginia/springhill-suites-alexandria.html">View Details</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+                <li>
+                    <div class="time">
+                        <h2>
+                            12 <br><span>August</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            Beach Side Resorts
+                        </h3>
+                        <p>
+                            A Hotel Side has a seasonal outdoor swimming pool, terrace, a restaurant and bar in Side. 1.2 km from Kumkoy Beach and 23 km from Green Canyon, the hotel provides a private beach area. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.
+                        </p>
+                        <a href="https://www.booking.com/beach/city/tr/side.en-gb.html?aid=2140954&label=msn-b4LpzjmUJT_i8SxChpTTnw-80608086364270%3Atikwd-80608235862687%3Aloc-90%3Aneo%3Amte%3Alp143967%3Adec%3Aqshotel%20tamilnadu%20website&utm_campaign=Where%20to%20stay%20-%20India&utm_campaign=Where%20to%20stay%20-%20India&utm_medium=cpc&utm_medium=cpc&utm_term=tamil%20nadu%20where%20to%20stay&utm_term=b4LpzjmUJT_i8SxChpTTnw&msclkid=bc8d1389bdbe144b37917600292b12c8&msclkid=bc8d1389bdbe144b37917600292b12c8&utm_source=bing&utm_source=bing&utm_content=R%3A3475-tamil-nadu&utm_content=R%3A3475-tamil-nadu&keep_landing=1&sid=e0710ee14b7c809bdd6a4280584b2035">View Details</a>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
