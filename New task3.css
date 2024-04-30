@@ -1,0 +1,23 @@
+h1 {
+    text-shadow: 2px 2px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+  div {
+    width: 200px;
+    height: 65px;
+    background-color: coral;
+    overflow: visible;
+  }
+
+  img {
+    opacity: 0.5;
+  }

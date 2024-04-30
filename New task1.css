@@ -1,0 +1,125 @@
+p {
+    color: red;
+  }
+
+Q  {
+    background-color:black;
+    height: 10px;
+    width: 100%;
+    color: red;
+}
+body{
+    background-color: white;
+}
+
+#banner img
+{
+    height: 250px;
+    width:100%;
+    padding-bottom: 20px;
+
+}
+
+#bottom1
+{
+    margin-top: 15px;
+    width:60%;
+    
+    
+    float:left;
+}
+
+#bottom2
+{
+    margin-top: 15px;
+    width:40%;
+    
+    
+    float:right;
+}
+
+#bottom1 h2
+{
+    color: black;
+    margin-left: 20px;
+
+}
+#bottom1 p
+{
+    color: black;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+#bottom1 a
+{
+    margin-left: 20px;
+   
+    color: orange;
+}
+#bottom2 h2
+{
+    color: black;
+    margin-left: 20px;
+
+}
+#footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    clear: both;
+}
+
+#footer ul
+{
+float: left;
+margin-top: 20px;
+
+}
+#footer ul li
+{
+display:inline;
+margin-right: 15px;
+}
+#footer ul li a
+{
+color:gray;
+text-decoration: none;
+font-size: 15px;
+}
+
+#footer p
+{
+    color:white;
+    float: right;
+   
+   
+
+}
+
+
+.article h1{
+    font-size: 36px;
+    color:#7af11f;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+
+}
+.article p{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-bottom: 50px;
+    
+}
+.article .btn{
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f15;
+}
