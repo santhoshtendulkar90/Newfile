@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoReclaim - Landfill Mining & Waste Management</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f9f1;
+      color: #2e3d29;
+    }
+
+    header {
+      background-color: #264d3a;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section.hero {
+      background: url('https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1200&q=60') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin: 0 0 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .btn-process {
+      margin-top: 20px;
+      background-color: #38b000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-process:hover {
+      background-color: #2d8700;
+    }
+
+    section.about, section.services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section.services {
+      background-color: #eaf4ec;
+    }
+
+    .output {
+      font-size: 1.5em;
+      color: #1b5e20;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #264d3a;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .btn-process {
+        width: 100%;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EcoReclaim</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Reclaiming Land. Reducing Waste.</h2>
+    <p>We turn landfills into resources and build a greener future.</p>
+    <button class="btn-process" onclick="startProcessing()">Simulate Waste Processing</button>
+    <div class="output" id="wasteOutput">♻️ Waste Processed: 0 tons</div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About EcoReclaim</h2>
+    <p>We specialize in landfill mining, resource recovery, and sustainable waste management. Our mission is to reduce environmental impact and recover valuable materials from landfills.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>✅ Landfill Excavation</li>
+      <li>✅ Waste Segregation & Sorting</li>
+      <li>✅ Resource Recovery</li>
+      <li>✅ Environmental Impact Studies</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 EcoReclaim. All rights reserved.
+  </footer>
+
+  <script>
+    let tonsProcessed = 0;
+    let processing = false;
+
+    function startProcessing() {
+      if (processing) return;
+      processing = true;
+
+      const output = document.getElementById("wasteOutput");
+
+      const processInterval = setInterval(() => {
+        const processed = Math.floor(Math.random() * 10) + 5;
+        tonsProcessed += processed;
+        output.textContent = `♻️ Waste Processed: ${tonsProcessed} tons`;
+
+        if (tonsProcessed >= 200) {
+          clearInterval(processInterval);
+          processing = false;
+          output.textContent += " ✅ Goal Achieved!";
+        }
+      }, 600);
+    }
+  </script>
+
+</body>
+</html>
